@@ -1,0 +1,15 @@
+{
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.autoprefix": []
+}
