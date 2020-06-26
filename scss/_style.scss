@@ -1,12 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Righteous&family=Roboto+Condensed&family=Ubuntu&display=swap");
 html,
 body {
-  height: 100%;
-  font: 1rem/1.5 var(--bs-gradient);
+  padding: 0;
+  margin: 0;
+  font-family: "Lato";
 }
 
-.form-login {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
+.navbar-brand {
+  font-family: "Pacifico";
+  font-size: 35px !important;
+  color: lightcoral !important;
+}
+
+.nav-link {
+  font-size: 16px;
+  margin: 15px;
+  font-family: "Roboto Condensed" !important;
+}
+
+.nav-link:hover {
+  color: #00e8e8;
+}
+
+ul.navbar-nav li.nav-link {
+  line-height: 35px;
 }
