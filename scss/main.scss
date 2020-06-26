@@ -1,1 +1,16 @@
+// Variables
+$primary: #401f7c;
+$secondary: #6610f2;
+
+$body-bg: #f4f4f4;
+$body-color: #111;
+
+$border-radius: 2px;
+$border-radius-sm: 2px;
+$border-radius-lg: 2px;
+
+$enable-shadows: true;
+$enable-gradients: true;
+
+@import "./style";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
