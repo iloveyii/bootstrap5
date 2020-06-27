@@ -10,7 +10,7 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-default fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="/"
           >S:)ft<span style="color: #00e8e8;">Hem</span></a
         >
         <button
@@ -28,19 +28,10 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto mb-2 mb-md-0">
             <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link" href="/c.html">Carousel</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -80,21 +71,84 @@
       <div class="container-fluid">
         <div class="row p-0">
           <div class="showcase text-center">
-            <div class="d-flex flex-row justify-content-center">
-              <img
-                src="./node_modules/bootstrap-icons/icons/alarm-fill.svg"
-                alt=""
-              />
-              <img
-                src="./node_modules/bootstrap-icons/icons/archive.svg"
-                alt=""
-              />
+            <div class="showcase-body">
+              <div
+                class="d-flex flex-row justify-content-center align-items-center"
+              >
+                <img
+                  src="./node_modules/bootstrap-icons/icons/alarm-fill.svg"
+                  alt=""
+                />
+                <img
+                  src="./node_modules/bootstrap-icons/icons/archive.svg"
+                  alt=""
+                />
+              </div>
+              <h1>Token Based Authentication Made Easy</h1>
+              <p>
+                Learn about token based authentication and how to easily
+                implement JWT in your applications.
+              </p>
+
+              <div class="d-flex flex-row justify-content-center buttons">
+                <button class="btn btn-primary btn-lg">Register</button>
+                <button class="btn btn-warning btn-lg">Read more</button>
+              </div>
             </div>
-            <h1>Token Based Authentication Made Easy</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="post">
+            <h2>TOKEN BASED AUTHENTICATION</h2>
             <p>
-              Learn about token based authentication and how to easily implement
-              JWT in your applications.
+              A token is a piece of data that has no meaning or use on its own,
+              but combined with the correct tokenization system, becomes a vital
+              player in securing your application. Token based authentication
+              works by ensuring that each request to a server is accompanied by
+              a signed token which the server verifies for authenticity and only
+              then responds to the request.
             </p>
+            <p>
+              JSON Web Token (JWT) is an open standard (RFC 7519) that defines a
+              compact and self-contained method for securely transmitting
+              information between parties encoded as a JSON object. JWT has
+              gained mass popularity due to its compact size which allows tokens
+              to be easily transmitted via query strings, header attributes and
+              within the body of a POST request.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card m-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="p-5">
+                  <img
+                    src="./node_modules/bootstrap-icons/icons/arrow-bar-right.svg"
+                    height="150"
+                    width="150"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-5">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -108,5 +162,22 @@
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      function outer() {
+        var b = 20;
+
+        function inner() {
+          var a = 10;
+          console.log(a + b);
+        }
+        return inner;
+      }
+
+      var i = outer();
+      i();
+
+      console.dir(i);
+      console.log("hi world");
+    </script>
   </body>
 </html>
