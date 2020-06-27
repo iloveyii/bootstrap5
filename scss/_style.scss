@@ -107,3 +107,7 @@ pre {
   border: 1px solid $gray-200;
   padding: 30px;
 }
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
