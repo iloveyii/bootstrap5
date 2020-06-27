@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Roboto&family=Roboto+Condensed&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,600|Source+Serif+Pro");
+@import "../node_modules/bootstrap/scss/variables";
 html,
 body {
   height: 100%;
@@ -98,4 +99,11 @@ ul.navbar-nav li.nav-link {
 
 .card {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+code,
+pre {
+  background-color: $gray-100;
+  border: 1px solid $gray-200;
+  padding: 30px;
 }
