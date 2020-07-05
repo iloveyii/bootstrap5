@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Roboto&family=Roboto+Condensed&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,600|Source+Serif+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Rambla&display=swap");
 @import "../node_modules/bootstrap/scss/variables";
 html,
 body {
   height: 100%;
-  font-family: "Roboto", Hevetica, sans-serif !important;
+  //font-family: "Roboto", Hevetica, sans-serif !important;
   //font-family: "Source Sans Pro", Hevetica, sans-serif !important;
+  font-family: "Rambla", Hevetica, sans-serif !important;
   background-color: #fff !important;
 }
 
@@ -94,6 +96,7 @@ ul.navbar-nav li.nav-link {
     line-height: 30px;
     color: gray;
     text-align: justify;
+    font-size: 20px;
   }
 }
 
@@ -108,6 +111,6 @@ pre {
   padding: 30px;
 }
 
-.dropdown:hover>.dropdown-menu {
-    display: block;
-  }
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
