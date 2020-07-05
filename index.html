@@ -151,6 +151,27 @@
         </div>
 
         <div class="row g-0 mt-5">
+          <div class="product">
+            <div class="product-header row">
+              <div class="col">
+                <label for="">RATE</label>
+                <span>8/10</span>
+              </div>
+              <div class="col">
+                <label for="">PRICE</label>
+                <span>$810</span>
+              </div>
+              <div class="col">
+                <button class="btn btn-primary">BUY NOW</button>
+              </div>
+            </div>
+            <div class="product-body">
+              <img src="images/hp.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 mt-5">
           <div class="code">
             <pre>
     import dotenv from "dotenv";
@@ -198,22 +219,5 @@
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      function outer() {
-        var b = 20;
-
-        function inner() {
-          var a = 10;
-          console.log(a + b);
-        }
-        return inner;
-      }
-
-      var i = outer();
-      i();
-
-      console.dir(i);
-      console.log("hi world");
-    </script>
   </body>
 </html>

@@ -114,3 +114,24 @@ pre {
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
+
+.product {
+  text-align: center;
+  &-header {
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    padding: 10px 0;
+
+    span {
+      font-size: 20px;
+    }
+    label {
+      font-size: 11px;
+    }
+  }
+  &-body {
+    margin: 20px;
+    background-color: #f6f6f6;
+    text-align: center;
+  }
+}
