@@ -24,6 +24,10 @@ body {
   color: lightcoral !important;
 }
 
+nav {
+  background-color: #292c2f;
+}
+
 .nav-link,
 .dropdown-item {
   font-size: 16px;
@@ -134,4 +138,9 @@ pre {
     background-color: #f6f6f6;
     text-align: center;
   }
+}
+
+footer {
+  background-color: #292c2f;
+  color: white;
 }
