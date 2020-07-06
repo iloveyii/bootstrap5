@@ -102,113 +102,232 @@
         </div>
       </section>
 
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
           <div class="post">
             <h2>TOKEN BASED AUTHENTICATION</h2>
-            <p>
-              A token is a piece of data that has no meaning or use on its own,
-              but combined with the correct tokenization system, becomes a vital
-              player in securing your application. Token based authentication
-              works by ensuring that each request to a server is accompanied by
-              a signed token which the server verifies for authenticity and only
-              then responds to the request.
-            </p>
-            <p>
-              JSON Web Token (JWT) is an open standard (RFC 7519) that defines a
-              compact and self-contained method for securely transmitting
-              information between parties encoded as a JSON object. JWT has
-              gained mass popularity due to its compact size which allows tokens
-              to be easily transmitted via query strings, header attributes and
-              within the body of a POST request.
-            </p>
           </div>
         </div>
-
-        <div class="row g-0 mt-5">
-          <div class="card" style="display: flex; flex-direction: row;">
-            <div style="flex: 1;">
-              <div class="p-5">
-                <img
-                  src="./node_modules/bootstrap-icons/icons/arrow-bar-right.svg"
-                  height="150"
-                  width="150"
-                  alt="..."
-                />
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 mb-3 text-center"
+        >
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
               </div>
-            </div>
-            <div style="flex: 4;">
-              <div class="card-body p-5">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $0 <small class="text-muted">/ mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row g-0 mt-5">
-          <div class="product">
-            <div class="product-header row">
-              <div class="col">
-                <label for="">RATE</label>
-                <span>8/10</span>
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
               </div>
-              <div class="col">
-                <label for="">PRICE</label>
-                <span>$810</span>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $0 <small class="text-muted">/ mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
               </div>
-              <div class="col">
-                <button class="btn btn-primary">BUY NOW</button>
-              </div>
-            </div>
-            <div class="product-body">
-              <img src="images/hp.jpg" alt="" />
             </div>
           </div>
-        </div>
 
-        <div class="row g-0 mt-5">
-          <div class="code mb-5">
-            <pre>
-    import dotenv from "dotenv";
-    import app from "./src/app";
-    
-    const session = require("express-session");
-    
-    
-    // ----------------------------------
-    // Environment setup
-    // ----------------------------------
-    dotenv.config({path: ".env"});
-    const {
-        PORT = 5500,
-        SESS_NAME = "sid",
-        SESS_SECRET = "top-secret",
-        SESS_LIFETIME = 1000 * 60 * 60 * 2, // 2 hrs
-    } = process.env;
-    
-    // ----------------------------------
-    // Express server
-    // ----------------------------------
-    const server = app.listen(PORT, () => {
-        console.log(
-            "  App is running on http://localhost:%d in %s mode",
-            PORT,
-            process.env.NODE_ENV ? process.env.NODE_ENV : "prod",
-        );
-        console.log("  Press CTRL-C to stop\n");
-    });
-    
-    export default server;
-                
-            </pre>
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $0 <small class="text-muted">/ mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $0 <small class="text-muted">/ mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $0 <small class="text-muted">/ mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $0 <small class="text-muted">/ mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $0 <small class="text-muted">/ mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $0 <small class="text-muted">/ mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  $0 <small class="text-muted">/ mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                >
+                  Sign up for free
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
