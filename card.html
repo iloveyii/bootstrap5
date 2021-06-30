@@ -6,16 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootsrap v5</title>
     <style>
-        section.bg {
-            background: url(/images/blank_bg.png) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
+        * {
+            box-sizing: border-box;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        .card__img {
             background-size: cover;
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/blank_bg.png', sizingMethod='scale');
-            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/blank_bg.png', sizingMethod='scale')";
+            background-position: center;
+            /* ratio : */
+            padding-bottom: 0%;
+            border: 3px solid lightgray;
+            border-radius: 3px;
+        }
+
+        .card h1, .card h3, .card h5 {
+            color: orange;
+        }
+
+        .card h2, .card h4 {
+            color: #3e3e63;
+        }
+        .card h1 {
+            font-size: 48px;
+        }
+        .card h2 {
+            font-size: 32px !important;
+        }
+        .card h3 {
+            font-size: 28px !important;
+        }
+        .card h4 {
+            font-size: 24px !important;
+        }
+        .card h5 {
+            font-size: 20px !important;
+            letter-spacing: 2px !important;
+        }
+        .card ._row {
+            display: flex;
+            margin-bottom: 2px;
+            flex-direction: row;
+            padding: 0;
+        }
+        .card .inline {
+            display: block;
+            width: 50%;
+            float: left;
+            color: orange;
+            font-size: 20px !important;
+            letter-spacing: 2px !important;
         }
     </style>
+
+<link rel="stylesheet" href="css/main.css" />
+
 
 </head>
 
@@ -29,34 +77,50 @@
             <div class="row">
                 <div class="post">
                     <h2>TOKEN BASED AUTHENTICATION</h2>
-                    <section class="bg">
-                        <div
-                            style="background-size: 100% 100%;margin: 0;border: 2px solid gray;padding: 20px; background-image2: url('/images/blank_bg.png'); min-height: 600px; background-repeat: no-repeat, no-repeat; background-position: top, left; display: flex; flex-direction: column;">
-                            <div style="flex: 1; display: flex; flex-direction: row;">
-                                <div style="flex:1">
-                                    <h1>Target 2035</h1>
+               
+                    <section>
+                        <article class="card">
+                            <div
+                              class="card__img"
+                              aria-label="Bg image"
+                              style="background-image: url(http://target2035.loc/sites/target2035.loc/files/inline-images/blank_bg.png)"
+                            >
+                        
+                            <div style="margin: 0; padding: 20px;  display: flex; flex-direction: column;">
+                                <div style="flex: 1; display: flex; flex-direction: row;">
+                                    <div style="flex:1">
+                                        <h1>Target 2035</h1>
+                                    </div>
+                                    <div style="flex:1; text-align: right;">
+                                        <h2>Target</h2>
+                                        <h3>2035</h3>
+                                    </div>
                                 </div>
-                                <div style="flex:1; text-align: right;">
-                                    <h2>Target</h2>
-                                    <h3>2035</h3>
+                                <div style="flex: 3; text-align: center;">
+                                    <h2>Chemical networks : How to source small molecules in Open Discovery Projects</h2>
+                                    <h4>Tuesday 18 May, 2021 | 7am PDT | 10 am EDT | 3pm BST | 4pm CEST by zoom</h4>
+                                    <h4>Moderators : Mat Todd (UCL) & Ben Perry (DNDi)</h4>
+                                </div>
+                                <div style="flex: 2; padding: 10px;">
+                                    <h3>SPEAKERS: </h3>
+                                    <div>
+                                        <div class="inline">Lauren Webster (WCAIR)</div>
+                                        <div class="inline"  style="text-align: right;">Bill Scott (IUPUI)</div>
+                                    </div>
+                                    <div>
+                                        <div class="inline">Ed Griffen (MedChemica)</div>
+                                        <div  class="inline"style="text-align: right;">Paul Workman (Chemical Probes Portal, ICR) </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: row; opacity: 0.7; background-color:#3e3e63;border-radius: 3px; padding:15px; color:#fff;">
+                                    <h4 style="color: #fff; margin: 0;flex: 1;">Free Registration</h4>
+                                    <h4 style="color: #fff; margin: 0;flex: 1;"> <a style="text-decoration: none; color: #fff;" href="https://www.target2035.net">www.target2035.net</a> </h4>
                                 </div>
                             </div>
-                            <div style="flex: 3">
-                                <h3>Chemical networks : How to source small molecules in Open Discovery Projects</h3>
-                                <p>Tuesday 18 May, 2021 | 7am PDT | 10 am EDT | 3pm BST | 4pm CEST by zoom</p>
-                                <p>Moderators : Mat Todd</p>
-                            </div>
-                            <div style="flex: 2">
-                                <h4>Speakers: </h4>
-                                <div>
-                                    <h5>Lauren Webster</h5>
-                                </div>
-                            </div>
-                            <div style="flex: 1">
-                                <h4>Free Registration</h4>
-                            </div>
-                        </div>
+                        </article>
                     </section>
+
+
                 </div>
             </div>
 
@@ -69,7 +133,7 @@
             <div class="row text-center m-5">
                 <div class="col">
                     <h1>
-                        <a class="navbar-brand" href="/">S:)ft<span style="color: #00e8e8;">Hem</span></a>
+                        <a class="navbar-brand" href="/">S:)ft<div style="color: #00e8e8;">Hem</div></a>
                     </h1>
                     <ul class="list-inline">
                         <li class="list-inline-item">Home</li>
@@ -84,7 +148,7 @@
                             <path fill-rule="evenodd"
                                 d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                         </svg>
-                        <span>07 HKR</span>
+                        <div>07 HKR</div>
                     </div>
                     <div class="footer-contact">
                         <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-telephone-outbound text-warning"
@@ -92,7 +156,7 @@
                             <path fill-rule="evenodd"
                                 d="M3.925 1.745a.636.636 0 0 0-.951-.059l-.97.97c-.453.453-.62 1.095-.421 1.658A16.47 16.47 0 0 0 5.49 10.51a16.47 16.47 0 0 0 6.196 3.907c.563.198 1.205.032 1.658-.421l.97-.97a.636.636 0 0 0-.06-.951l-2.162-1.682a.636.636 0 0 0-.544-.115l-2.052.513a1.636 1.636 0 0 1-1.554-.43L5.64 8.058a1.636 1.636 0 0 1-.43-1.554l.513-2.052a.636.636 0 0 0-.115-.544L3.925 1.745zM2.267.98a1.636 1.636 0 0 1 2.448.153l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.471 17.471 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
                         </svg>
-                        <span>+768 9408989</span>
+                        <div>+768 9408989</div>
                     </div>
                     <div class="footer-contact">
                         <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-envelope text-warning"
@@ -100,7 +164,7 @@
                             <path fill-rule="evenodd"
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
                         </svg>
-                        <span>email@mail.com</span>
+                        <div>email@mail.com</div>
                     </div>
                 </div>
                 <div class="col">
