@@ -1,16 +1,30 @@
 {
-  "name": "bs5",
-  "version": "1.0.0",
-  "description": "",
+  "name": "frontend2035",
+  "version": "2.0.0",
+  "description": "HTML theme",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "deploy": "npm run cp_files && npm run fragment_index",
+    "cp_files": "npm run _cp_images && npm run _cp_css_file && npm run _cp_js_file",
+    "fragment_index": "node parser.js",
+    "_cp_images": "cp public/images/ ../backend/src/main/resources/static/images -Rf",
+    "_cp_css_file": "cp public/css/main.css ../backend/src/main/resources/static/css/main.css",
+    "_cp_js_file": "cp public/js/web.js ../backend/src/main/resources/static/js/web.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.0.0-alpha1",
-    "bootstrap-icons": "^1.0.0-alpha4"
+    "bootstrap-icons": "^1.0.0-alpha4",
+    "jsdom": "^16.5.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
   }
 }

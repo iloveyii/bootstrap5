@@ -21,6 +21,10 @@ section#showcase {
   margin: auto;
 }
 
+/***********************************************/
+/*               NAVBAR                    *****/
+/***********************************************/
+
 .navbar-brand {
   font-family: "Pacifico";
   font-size: 35px !important;
@@ -28,7 +32,7 @@ section#showcase {
 }
 
 nav {
-  background-color: #292c2f;
+  background-color: #fff !important;
 }
 
 .nav-link,
@@ -57,6 +61,13 @@ ul.navbar-nav li.nav-link {
   line-height: 35px;
 }
 
+.nav-custom ul li a {
+  text-transform: uppercase;
+}
+
+/***********************************************/
+/*               SECTIONS                  *****/
+/***********************************************/
 .showcase,
 section#showcase {
   display: flex;
@@ -88,6 +99,10 @@ section#showcase {
     padding: 12px 24px;
   }
 }
+
+/***********************************************/
+/*               CAROUSEL                  *****/
+/***********************************************/
 .carousel .btn {
   margin: 10px;
   padding: 12px 24px;
@@ -109,6 +124,9 @@ section#showcase {
   }
 }
 
+/***********************************************/
+/*               CARD                      *****/
+/***********************************************/
 .card {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -144,6 +162,10 @@ pre {
     text-align: center;
   }
 }
+
+/***********************************************/
+/*               FOOTER                    *****/
+/***********************************************/
 
 footer,
 .footer {
