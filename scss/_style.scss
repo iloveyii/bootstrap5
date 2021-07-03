@@ -192,6 +192,15 @@ footer,
   text-decoration: none;
 }
 
+.post .upcoming-events {
+  text-align: left;
+  max-width: 700px;
+  display: inline-block !important;
+}
+.post .upcoming-events small {
+  font-size: 17px !important;
+}
+
 .host-institutues li {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
